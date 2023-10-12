@@ -1,0 +1,136 @@
+body, h1, p, ul, li, button {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #F3F4F6;
+  font-family: 'Noto Sans Thai', sans-serif;
+}
+
+.header {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.header a {
+  text-decoration: none;
+  color: white;
+  margin-right: 20px;
+}
+
+.quiz-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 3px;
+  text-align: center;
+}
+
+.feedback {
+  font-size: 18px;
+  margin-bottom: 12px;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.image-container {
+  height: 300px; 
+  overflow: auto; 
+  text-align: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.choices {
+  display: flex;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.choices button {
+  flex: 1; 
+  padding: 10px;
+  justify-content: center;
+  text-align: center;
+  margin-right: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+@media (max-width: 600px) {
+  .choices {
+      flex-direction: column;
+  }
+
+  .image-container {
+    height: 300px; 
+    overflow: auto; 
+    text-align: center;
+  }
+  
+  .choices button {
+      margin: 5px;
+      padding: 10px 20px;
+      text-align: center;
+      width: 100%; 
+  }
+}
+
+.choices button:last-child {
+  margin-right: 0;
+}
+
+.choices button:hover {
+  background-color: #1b2a3b; 
+}
+
+.info {
+  background-color: #F3F4F6;
+  padding: 10px;
+  margin-top: 12px;
+}
+
+.info h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#nextButton {
+  background-color: #364966;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+
+  width: 100%; 
+  height: auto; 
+}
+
+#nextButton:hover {
+  background-color: #1b2a3b; /* Change the background color on hover */
+}

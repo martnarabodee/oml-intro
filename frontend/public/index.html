@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OML</title>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>OML ระดับความยาก <span id="difficulty"></span></h1>
+        <div class="feedback" id="feedbackMessage"></div>
+        <div class="image-container">
+            <img id="problemImage" src="" alt="Problem" class="image">
+        </div>
+
+        <div class="info" id="info">
+            <p>เนื้อหาที่ใช้: <span id="content"></span><span id="comment"></span></p>
+            <p>ดูโจทย์แล้ว: <span id="totalViewed"></span> ข้อ,
+                ทำถูก: <span id="totalCorrect"></span> ข้อ</p>
+        </div>
+        <div class="choices">
+            <button id="choice1">1</button>
+            <button id="choice2">2</button>
+            <button id="choice3">3</button>
+            <button id="choice4">4</button>
+        </div>
+
+        <button id="nextButton">Next</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
